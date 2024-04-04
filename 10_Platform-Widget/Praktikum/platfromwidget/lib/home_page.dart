@@ -11,7 +11,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // Data 
+  // Data
   final Map<String, String> values = {
     'John Doe': '1234567890',
     'Jane Smith': '0987654321',
@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
                 final String name = entry.key;
                 final String phone = entry.value;
                 final String iconName = name[0];
-                
+
                 return Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -83,7 +83,8 @@ class _HomePageState extends State<HomePage> {
                       alignment: Alignment.center,
                       child: Text(
                         iconName,
-                        style: const TextStyle(fontSize: 20, color: Colors.white),
+                        style:
+                            const TextStyle(fontSize: 20, color: Colors.white),
                       ),
                     ),
                     Column(
@@ -98,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                           style: const TextStyle(fontSize: 15),
                         ),
                         // Membuat jarak antar item
-                      const SizedBox(height: 10),
+                        const SizedBox(height: 10),
                       ],
                     ),
                   ],
@@ -111,7 +112,8 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.settings), label: 'Settings'),
         ],
         selectedItemColor: const Color.fromARGB(255, 17, 193, 55),
         unselectedItemColor: Colors.grey,
